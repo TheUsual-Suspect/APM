@@ -1,0 +1,34 @@
+[
+    {
+    "id":1,
+    "name": "Salah",
+    "price": 12,
+    "totalPoints": 164,
+    "selectedByPercentage": 40,
+    "imageUrl": "assets/images/salah.jpg"
+},
+{
+    "id":2,
+    "name": "Kane",
+    "price": 11,
+    "totalPoints": 150,
+    "selectedByPercentage": 50,
+    "imageUrl": "assets/images/kane.jpg"
+},
+{
+    "id":3,
+    "name": "Bale",
+    "price": 9,
+    "totalPoints": 50,
+    "selectedByPercentage": 5,
+    "imageUrl": "assets/images/kane.jpg"
+},
+{
+    "id":4,
+    "name": "Fernandes",
+    "price": 10,
+    "totalPoints": 200,
+    "selectedByPercentage": 60,
+    "imageUrl": "assets/images/kane.jpg"
+}
+]
