@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IPlayer } from './Player';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   templateUrl: './player-detail.component.html',
@@ -11,11 +11,12 @@ export class PlayerDetailComponent implements OnInit {
   pageTitle : string = 'Player details';
   fplPlayer : IPlayer;
 
-  constructor(private router : ActivatedRoute) {  
+  constructor(private route : ActivatedRoute,
+    private router : Router) {  
   } 
 
   ngOnInit(): void {
-    let id = +this.router.snapshot.paramMap.get('id');
+    let id = +this.route.snapshot.paramMap.get('id');
     this.pageTitle += `: ${id}`;
     this.fplPlayer = {
     "id": id,
@@ -25,6 +26,10 @@ export class PlayerDetailComponent implements OnInit {
     "selectedByPercentage": 40,
     "imageUrl": "assets/images/salah.jpg"
     }
+  }
+
+  onBack(): void {
+    this.router.navigate(['/fplPlayers'])
   }
 
 }

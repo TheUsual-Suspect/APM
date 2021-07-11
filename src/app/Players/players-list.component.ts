@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import {IPlayer} from './Player';
 import { PlayerService } from './Players.service';
 
@@ -48,6 +49,8 @@ export class PlayersListComponent implements OnInit {
             error: err => this.errorMessage = err
         });
     }
+
+    
 
     performFilter(filterText: string) : IPlayer[]
     {
