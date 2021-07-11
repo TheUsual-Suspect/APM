@@ -30,5 +30,13 @@
     "totalPoints": 200,
     "selectedByPercentage": 60,
     "imageUrl": "assets/images/kane.jpg"
+},
+{
+    "id":5,
+    "name": "Bamford",
+    "price": 6,
+    "totalPoints": 200,
+    "selectedByPercentage": 48,
+    "imageUrl": "assets/images/kane.jpg"
 }
 ]
