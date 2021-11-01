@@ -30,7 +30,7 @@ export class PlayerDetailComponent implements OnInit {
 
   onBack(): void {
     this.router.navigate(['/fplPlayers'])
-    //TestChange
+    //Trigger deployment
   }
 
 }
